@@ -14,3 +14,6 @@ WIP
  - [Control](https://play.google.com/store/apps/details?id=com.charlieroberts.Control)
  - [osc-commander](http://osc-commander.com/)
  - [Open Stage Control](http://osc.ammd.net/)
+
+## code libraries
+ - [osc.js](https://github.com/colinbdclark/osc.js) - javascript
