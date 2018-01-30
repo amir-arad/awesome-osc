@@ -9,6 +9,7 @@ WIP
 ### bridge between osc and another domain / API 
  - [osculator](https://osculator.net/) - physical controller (wiimote, mouse/keyboard, wacom tablets etc.)
  - [andOSC](https://play.google.com/store/apps/details?id=cc.primevision.andosc) - android touch, accelerometer and orientation
+ - [HID](https://github.com/enrike/hid_to_osc) - python script that captures HID devices' (joysticks, gamepads) events and broadcasts them on OSC
 
 ### control surface and dashboard
  - [touchosc](https://hexler.net/software/touchosc-android)
@@ -30,4 +31,3 @@ WIP
  - [pyOSC](https://github.com/ptone/pyosc) - Python
  - [simpleOSC](https://github.com/enrike/simpleOSC) - Basic interface for pyOSC
  - [javaosc](https://github.com/hoijui/JavaOSC) - Java
- - [HID](https://github.com/enrike/hid_to_osc) - python script that captures HID devices' (joysticks, gamepads) events and broadcasts them on OSC
