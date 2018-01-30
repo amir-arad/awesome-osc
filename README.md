@@ -30,3 +30,4 @@ WIP
  - [pyOSC](https://github.com/ptone/pyosc) - Python
  - [simpleOSC](https://github.com/enrike/simpleOSC) - Basic interface for pyOSC
  - [javaosc](https://github.com/hoijui/JavaOSC) - Java
+ - [HID](https://github.com/enrike/hid_to_osc) - python script that captures HID devices' (joysticks, gamepads) events and broadcasts them on OSC
