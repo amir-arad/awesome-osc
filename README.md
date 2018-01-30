@@ -6,12 +6,12 @@ WIP
  - [Official site](http://opensoundcontrol.org/) - where specs and other resources live
  - [SynOsc](https://github.com/fabb/SynOSCopy/wiki) - a proposal for a standardized namespace within OSC
 
-### bridge between osc and another domain / API 
+### Bridge between osc and another domain / API 
  - [osculator](https://osculator.net/) - physical controller (wiimote, mouse/keyboard, wacom tablets etc.)
  - [andOSC](https://play.google.com/store/apps/details?id=cc.primevision.andosc) - android touch, accelerometer and orientation
  - [HID](https://github.com/enrike/hid_to_osc) - python script that captures HID devices' (joysticks, gamepads) events and broadcasts them on OSC
 
-### control surface and dashboard
+### Control surface and dashboard
  - [touchosc](https://hexler.net/software/touchosc-android)
  - [Open Stage Control](http://osc.ammd.net/)
  - [lemur](https://liine.net/en/products/lemur/)
@@ -20,10 +20,10 @@ WIP
  - [Control](https://play.google.com/store/apps/details?id=com.charlieroberts.Control)
  - [osc-commander](http://osc-commander.com/)
 
-### Projects
- - [ixi audio](http://www.ixi-software.net/content/about.html) - creating musical instruments / environments
- 
-### code libraries
+### Other Projects
+  - [ixi audio](http://www.ixi-software.net/content/software.html) - creating musical instruments / environments
+
+### Code libraries
  - [libido](https://github.com/radarsat1/liblo) - Lightweight OSC implementation in C, C++
  - [oscpack](https://code.google.com/archive/p/oscpack/) - C++ packet manipulation library
  - [osc.js](https://github.com/colinbdclark/osc.js) - javascript
