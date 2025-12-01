@@ -1,33 +1,164 @@
-# awesome-osc [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-A curated list of useful open-sound-control applications, libraries, resources and shiny things, just a starting point for your explorations. Inspired by [awesome-python](https://github.com/vinta/awesome-python). Other amazingly awesome lists can be found in the [awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness) list.
+# Awesome OSC [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-WIP
-### Specifications
- - [Official site](http://opensoundcontrol.org/) - where specs and other resources live
- - [SynOsc](https://github.com/fabb/SynOSCopy/wiki) - a proposal for a standardized namespace within OSC
+> A curated list of Open Sound Control (OSC) resources, tools, libraries, and implementations
 
-### Bridge between osc and another domain / API 
- - [osculator](https://osculator.net/) - physical controller (wiimote, mouse/keyboard, wacom tablets etc.)
- - [andOSC](https://play.google.com/store/apps/details?id=cc.primevision.andosc) - android touch, accelerometer and orientation
- - [HID](https://github.com/enrike/hid_to_osc) - python script that captures HID devices' (joysticks, gamepads) events and broadcasts them on OSC
+OSC is a protocol for communication among computers, sound synthesizers, and other multimedia devices that is optimized for modern networking technology. It enables real-time control and data exchange across networks with high precision.
 
-### Control surface and dashboard
- - [touchosc](https://hexler.net/software/touchosc-android)
- - [Open Stage Control](http://osc.ammd.net/)
- - [lemur](https://liine.net/en/products/lemur/)
- - [oscillation](http://www.workprolighting.com/products/oscillation)
- - [myosc](https://play.google.com/store/apps/details?id=com.widget.myosc)
- - [Control](https://play.google.com/store/apps/details?id=com.charlieroberts.Control)
- - [osc-commander](http://osc-commander.com/)
+## Contents
 
-### Other Projects
-  - [ixi audio](http://www.ixi-software.net/content/software.html) - creating musical instruments / environments
+- [Specifications & Learning](#specifications--learning)
+- [Controllers](#controllers)
+- [Debugging & Utilities](#debugging--utilities)
+- [Game Engines & Creative Coding](#game-engines--creative-coding)
+- [Audio & Music Software](#audio--music-software)
+- [Code Libraries](#code-libraries)
+- [IoT, Embedded & Hardware](#iot-embedded--hardware)
+- [Example Projects & Templates](#example-projects--templates)
 
-### Code libraries
- - [libido](https://github.com/radarsat1/liblo) - Lightweight OSC implementation in C, C++
- - [oscpack](https://code.google.com/archive/p/oscpack/) - C++ packet manipulation library
- - [osc.js](https://github.com/colinbdclark/osc.js) - javascript
- - [Net::OpenSoundControl](http://search.cpan.org/dist/Net-OpenSoundControl/) - Perl client/server implementations
- - [pyOSC](https://github.com/ptone/pyosc) - Python
- - [simpleOSC](https://github.com/enrike/simpleOSC) - Basic interface for pyOSC
- - [javaosc](https://github.com/hoijui/JavaOSC) - Java
+## Specifications & Learning
+
+- [OpenSoundControl.org](https://opensoundcontrol.stanford.edu/) - Official site with specification 1.0 and comprehensive documentation
+- [OSC Specification 1.0](https://opensoundcontrol.stanford.edu/spec-1_0.html) - The official protocol specification
+- [Wikipedia: Open Sound Control](https://en.wikipedia.org/wiki/Open_Sound_Control) - Overview with OSC vs MIDI comparison, addressing schemes, bundles, and time tags
+- [OpenSoundControl.org Page List](https://opensoundcontrol.stanford.edu/page-list.html) - Comprehensive directory of OSC resources
+
+## Controllers
+
+### Touch & Desktop Control Surfaces
+
+- **[TouchOSC](https://hexler.net/touchosc)** - *Active / Paid*  
+  The modular touch control surface standard. Actively maintained for iOS, Android, Windows, and macOS with extensive MIDI/OSC capabilities.
+
+- **[Open Stage Control](https://openstagecontrol.ammd.net/)** - *Active / Open Source*  
+  Browser-based OSC/MIDI controller. Runs as a local web server and works with any modern touch device. Highly scriptable and customizable.
+
+- **[OSC Pilot](https://oscpilot.com/)** - *Active / Paid*  
+  High-performance, GPU-accelerated control surface for Windows/macOS, designed for touring visual artists and live performance.
+
+- **[OSCAR](https://www.oscar-app.de/)** - *Active*  
+  Modern, user-friendly controller app for iOS and Android with pre-built layouts for REAPER and RME TotalMix.
+
+- **[Lemur](https://www.midikinetics.com/lemur/)** - *Legacy*  
+  Multitouch OSC/MIDI controller on iOS. Still widely used but maintenance status is limited.
+
+## Debugging & Utilities
+
+- **[Protokol](https://hexler.net/protokol)** - *Active / Free*  
+  Essential debugging tool. Lightweight utility to monitor incoming OSC and MIDI traffic in real-time.
+
+- **[Packet Sender](https://packetsender.com/)** - *Active / Open Source*  
+  Network testing tool for manually sending UDP/TCP packets. Great for testing OSC connectivity.
+
+## Game Engines & Creative Coding
+
+### Unreal Engine
+
+- **[Official OSC Plugin](https://dev.epicgames.com/documentation/en-us/unreal-engine/osc-plugin-overview-for-unreal-engine)** - Built-in to UE5 with Blueprint API
+- **[UE-OSC](https://github.com/monsieurgustav/UE-OSC)** - Community alternative with additional features
+
+### Unity
+
+- **[OSC Jack](https://github.com/keijiro/OscJack)** - *Active*  
+  Lightweight, high-performance OSC implementation for Unity (C#). Gold standard for Unity OSC.
+- **[extOSC](https://assetstore.unity.com/packages/tools/input-management/extosc-open-sound-control-72005)** - *Active / Paid*  
+  Robust, full-featured asset widely used in professional installations.
+
+### Godot
+
+- **[GodOSC](https://github.com/afarra6/godOSC)** - *Active*  
+  GDScript implementation providing OSC send/receive via nodes for Godot 4.x.
+- **[GodOSC (Asset Library)](https://godotengine.org/asset-library/asset/2538)** - Official asset library entry
+
+### Other Platforms
+
+- **[Max/MSP](https://cycling74.com/products/max)** - First-class OSC citizen via built-in objects
+- **[Pure Data](https://puredata.info/)** - Native OSC support via bundled externals
+- **Processing** - See [OpenSoundControl.org implementations](https://opensoundcontrol.stanford.edu/implementations.html)
+- **[TouchDesigner](https://derivative.ca/)** - Built-in OSC support for creative coding
+- **[openFrameworks](https://openframeworks.cc/)** - Multiple OSC addon implementations available
+
+## Audio & Music Software
+
+### DAWs with Native OSC Support
+
+- **[REAPER](https://www.reaper.fm/sdk/osc/osc.php)** - *Active*  
+  Deepest native OSC support of any DAW. Fully customizable `.ReaperOSC` control surface files.
+
+- **[Ableton Live - Connection Kit](https://www.ableton.com/en/packs/connection-kit/)** - *Active / Free*  
+  Official Max for Live pack with "OSC Send" and "OSC Receive" devices.
+
+- **[Bitwig Studio - Mossgrabers Scripts](http://www.mossgrabers.de/software/Bitwig/Bitwig.html)** - *Active*  
+  Community standard for advanced controller scripts, including generic "Open Sound Control" extension.
+
+- **Cubase** - Native OSC control surface support
+- **Unify** - Built-in OSC control capabilities
+
+## Code Libraries
+
+### Python
+
+- **[python-osc](https://pypi.org/project/python-osc/)** - *Active*  
+  Modern standard for Python OSC. Supports UDP/TCP with threading/forking server examples. Use this instead of legacy pyOSC.
+
+### JavaScript / TypeScript
+
+- **[osc.js](https://github.com/colinbdclark/osc.js/)** - *Active*  
+  Works in both browser (via WebSocket) and Node.js (via UDP/Serial). Highly maintained and feature-complete.
+- **[node-osc](https://github.com/MylesBorins/node-osc)** - *Active*  
+  Simpler alternative specifically for Node.js users.
+
+### C / C++
+
+- **[oscpack](https://github.com/rossbencina/oscpack)** - *Stable*  
+  Classic C++ library by Ross Bencina. Rock solid and widely used. Rarely updated because it "just works."
+- **[liblo](https://liblo.sourceforge.net/)** - *Stable*  
+  Standard C library. Lightweight and POSIX-compliant.
+
+### Other Languages
+
+- **Java** - Multiple implementations available (see OpenSoundControl.org)
+- **Rust** - Community implementations on crates.io
+- **Perl** - Legacy implementations available
+
+## IoT, Embedded & Hardware
+
+### Arduino & Microcontrollers
+
+- **[MicroOsc](https://github.com/thomasfredericks/MicroOsc)** - *Active*  
+  Modern, lightweight OSC library for Arduino, ESP8266, ESP32, and Teensy. Supports UDP and serial transport.
+
+- **[OSC (CNMAT)](https://github.com/CNMAT/OSC)** - *Legacy*  
+  Classic Arduino library. Still functional but MicroOsc is often easier for beginners.
+
+### Professional Hardware
+
+- **Q-Sys** - Professional audio systems with OSC control
+- **RME TotalMix** - Audio interface mixing software with OSC support
+- Various professional audio gear with vendor OSC documentation
+
+### Home Automation
+
+- OSC integration discussions in [Home Assistant community](https://community.home-assistant.io/t/integration-request-osc-open-sound-control/895723)
+
+## Example Projects & Templates
+
+- **[Open Stage Control & Max Tutorial](https://cycling74.com/forums/-sharing-open-stage-control-max-tutorial-examples)** - Examples combining Open Stage Control with Max/MSP
+- Interactive installation examples (PRs welcome!)
+- Performance rig templates (PRs welcome!)
+
+## Maintenance & Contribution Guidelines
+
+- Unmaintained projects are explicitly marked as **Legacy** or with maintenance status notes
+- Every entry should include: platform(s), maintenance status, and primary use-case
+- PRs adding currently maintained tools are preferred
+- Aim to keep the list relevant for 2025 and beyond
+
+## Contributing
+
+Contributions welcome! Read the [contribution guidelines](contributing.md) first.
+
+## License
+
+[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, the contributors have waived all copyright and related rights to this work.
