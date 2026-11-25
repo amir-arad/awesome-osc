@@ -38,6 +38,9 @@ OSC is a protocol for communication among computers, sound synthesizers, and oth
 - **[OSCAR](https://www.oscar-app.de/)** - *Active*  
   Modern, user-friendly controller app for iOS and Android with pre-built layouts for REAPER and RME TotalMix.
 
+- **[OSCAR by createwithoscar](https://www.createwithoscar.com)** - *Active / Open Source*  
+  Design control surfaces in the browser, then open them on any phone or tablet with no install, or in its Android and iOS apps. Sends OSC, MIDI and DMX (Art-Net, sACN). Windows, macOS and Linux. [Source](https://github.com/trafalmejo/OSCAR).
+
 - **[Lemur](https://www.midikinetics.com/lemur/)** - *Legacy*  
   Multitouch OSC/MIDI controller on iOS. Still widely used but maintenance status is limited.
 
